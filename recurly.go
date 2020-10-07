@@ -238,6 +238,7 @@ func (r *response) populatePageCursor() {
 	if !ok || len(links) == 0 {
 		return
 	}
+	fmt.Println(links)
 
 	for _, link := range strings.Split(links[0], ",") {
 		segments := strings.Split(strings.TrimSpace(link), ";")
